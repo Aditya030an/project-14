@@ -15,14 +15,14 @@ const UserCard = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="bg-white shadow-lg rounded-lg p-6 w-[400px] flex items-center border border-gray-300">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4">
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md flex flex-col sm:flex-row items-center border border-gray-300">
         <img
           src={user.picture.large}
           alt={user.name.first}
           className="w-32 h-32 rounded-lg border-2 border-gray-500"
         />
-        <div className="ml-6">
+        <div className="sm:ml-6 mt-4 sm:mt-0 text-center sm:text-left">
           <h2 className="text-xl font-semibold">
             {user.name.first} {user.name.last}
           </h2>
